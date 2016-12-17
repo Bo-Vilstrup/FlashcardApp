@@ -1,35 +1,35 @@
 {
-  "name": "OpenShift-Sample-App",
-  "version": "1.0.0",
-  "description": "OpenShift Sample Application",
-  "keywords": [
-    "OpenShift",
-    "Node.js",
-    "application",
-    "openshift"
-  ],
-  "author": {
-    "name": "OpenShift",
-    "email": "ramr@example.org",
-    "url": "http://www.openshift.com/"
-  },
-  "homepage": "http://www.openshift.com/",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/openshift/origin-server"
-  },
-
-  "engines": {
-    "node": ">= 0.6.0",
-    "npm": ">= 1.0.0"
-  },
-
-  "dependencies": {
-    "express": "~3.4.4"
-  },
-  "devDependencies": {},
-  "bundleDependencies": [],
-
+  "name": "ProjectFlashCardServerSeed2",
+  "version": "0.0.0",
   "private": true,
-  "main": "server.js"
+  "scripts": {
+    "postinstall": "if [ -d \"$OPENSHIFT_REPO_DIR\" ]; then (export HOME=\"$OPENSHIFT_REPO_DIR\"/..; bower install) else (bower install) fi",
+    "start": "node ./bin/www",
+    "test": "node_modules/.bin/mocha -w"
+  },
+  "main": "./bin/www",
+  "dependencies": {
+    "bcrypt": "^0.8.7",
+    "body-parser": "~1.15.1",
+    "bower": "latest",
+    "cloud-env": "^0.2.2",
+    "cookie-parser": "~1.4.3",
+    "cors": "^2.8.1",
+    "debug": "~2.2.0",
+    "express": "~4.13.4",
+    "express-session": "^1.14.1",
+    "hbs": "~4.0.0",
+    "helmet": "^3.1.0",
+    "jwt-simple": "^0.5.1",
+    "mongoose": "^4.6.1",
+    "mongoose-double": "0.0.1",
+    "morgan": "~1.7.0",
+    "passport": "^0.3.2",
+    "passport-jwt": "^2.2.1",
+    "request": "^2.76.0",
+    "serve-favicon": "~2.3.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0"
+  }
 }

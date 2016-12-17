@@ -1,0 +1,9 @@
+{
+  "name": "securitySeed1",
+  "dependencies": {
+    "angular": "1.5.9",
+    "angular-route": "1.5.9",
+    "bootstrap": "^3.3.7",
+    "ngstorage": "^0.3.11"
+  }
+}

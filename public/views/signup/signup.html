@@ -1,0 +1,37 @@
+<div class="container">
+
+    <h2>Create new account</h2><br/>
+
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label class="col-sm-2 control-label">User Name:</label>
+            <div class="col-sm-10">
+                <input type="text" ng-focus="Focus()" ng-model="userName" placeholder="User Name">
+                <span style="{{Style(isSaved)}}">{{feetbackError}}</span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Password:</label>
+            <div class="col-sm-10">
+                <input type="password" ng-focus="Focus()" ng-model="password" placeholder="Password">
+                <span style="{{missingPS}}; color: red">Missing Password</span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Retype Password:</label>
+            <div class="col-sm-10">
+                <input type="password" ng-focus="Focus()" ng-model="password2" placeholder="Retype Password">
+                <span style="{{wrongPs}}; color: red">Wrong! Retype Password</span>
+            </div>
+        </div>
+        <p style="{{Style(isSaved)}}">{{feetback}}</p>
+    </form>
+
+    <hr>
+    <button class="btn btn-success" ng-click="submit()">
+        <span class="glyphicon glyphicon-save"></span>  Create New User
+    </button>
+
+
+</div>

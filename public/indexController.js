@@ -4,7 +4,7 @@
 'use strict';
 
 //angular.module('myApp.view1', ['ngRoute', 'ngAnimate', 'ui.bootstrap'])
-angular.module('app.indexModule' ,['ngRoute', 'ngStorage'])
+angular.module('app.indexModule', ['ngRoute', 'ngStorage'])
     .controller('indexController', function ($http, $scope, $localStorage, $location) {
 
 
@@ -47,7 +47,7 @@ angular.module('app.indexModule' ,['ngRoute', 'ngStorage'])
         $scope.indexController.userName = "";
         $scope.indexController.password = "";
 
-            $scope.login = function () {
+        $scope.login = function () {
             $http({
                 method: 'post',
                 url: '/signin',
@@ -64,7 +64,7 @@ angular.module('app.indexModule' ,['ngRoute', 'ngStorage'])
                 // do something if an error
             });
         }; // End of login
-        
+
         $scope.logout = function () {
             delete $localStorage.token;
             //changeUser({});

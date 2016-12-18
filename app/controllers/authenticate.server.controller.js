@@ -15,17 +15,6 @@ var jwt = require('jwt-simple');
 
 exports.signup = function (req, res) {
 
-    // var newUser = new User(req.body);
-    //
-    // newUser.save(function (err, createdDocument) {
-    //     if(err) {
-    //         res.json(err);
-    //     } else {
-    //         res.json(createdDocument);
-    //     }
-    // });
-
-
     if (!req.body.userName || !req.body.password) {
         res.json({success: false, msg: 'Please pass name and password.'});
     } else {
@@ -45,18 +34,6 @@ exports.signup = function (req, res) {
 
 
 exports.signin = function (req, res) {
-
-    // var userName = req.body.userName;
-    //
-    // User.findOne({ 'userName': userName }, function (err, data) {
-    //     if(err) {
-    //         res.json(err);
-    //     } else {
-    //         if(data != null)
-    //             req.session.userName = userName;
-    //         res.json(data);
-    //     }
-    // });
 
     User.findOne({
         userName: req.body.userName

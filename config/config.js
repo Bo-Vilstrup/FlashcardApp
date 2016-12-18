@@ -15,7 +15,7 @@ var ip = configCloudEnv.get('IP','127.0.0.1');
 //var ip = configCloudEnv.IP;
 
 // local database
-var localDataBase =  '/security_seed_1';
+var localDataBase =  '/flashcardapp';
 // Build the connection string
 var dbURI = configCloudEnv.MONGODB_DB_URL + configCloudEnv.get('APP_NAME', localDataBase);
 

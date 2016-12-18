@@ -9,7 +9,8 @@ angular.module('app', [
     'app.indexModule',
     'app.homeModule',
     'app.signupModule',
-    'app.restrictedModule'
+    'app.restrictedModule',
+    'app.createFlashcardsModule'
 ])
     .config(['$routeProvider', function ($routeProvider) {
         $routeProvider.otherwise({redirectTo: '/home'});

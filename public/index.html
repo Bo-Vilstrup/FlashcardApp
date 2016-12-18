@@ -50,6 +50,7 @@
     <script src="views/home/homeController.js"></script>
     <script src="views/signup/signup.js"></script>
     <script src="views/restricted/restrictedController.js"></script>
+    <script src="views/createFlashcards/createFlashcardsController.js"></script>
 
     <!-- Bootstrap core CSS -->
     <!--<link href="../../dist/css/bootstrap.min.css" rel="stylesheet">-->
@@ -81,8 +82,9 @@
             </button>
             <!-- a class="navbar-brand" href="#">Project name</a -->
             <a class="navbar-brand" href="#/home">Home</a>
-            <a class="navbar-brand" href="#/signup">Sign up</a>
-            <a class="navbar-brand" href="#/restricted">Restricted area</a>
+            <a class="navbar-brand" href="#/signup">Sign Up</a>
+            <a class="navbar-brand" href="#/createFlashcards">Create Flashcards</a>
+            <a class="navbar-brand" href="#/restricted">Restricted Area</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <form class="navbar-form navbar-right" ng-show="!isAuthenticated" ng-submit="login()">

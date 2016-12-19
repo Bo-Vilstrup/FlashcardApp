@@ -1,23 +1,33 @@
 <div class="container">
-
     <div class="container">
         <h2>Users in the Database</h2>
-        <table class="table table-striped">
-            <thead>
-            <tr>
-                <th>User Name</th>
-                <th>Password Hashed and Salted</th>
-                <th>Remove a User</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr ng-repeat="user in users">
-                <td>{{user.userName}}</td>
-                <td>{{user.password}}</td>
-                <td><button class="danger" ng-click="delete($index)">Delete</button></td>
-            </tr>
-            </tbody>
-        </table>
+        <Br/>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th>User Name</th>
+                        <th>Password Hashed and Salted</th>
+                        <th>Remove a User</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="user in users">
+                        <td>{{user.userName}}</td>
+                        <td>{{user.password}}</td>
+                        <td>
+                            <button class="danger" ng-click="delete($index)">Delete</button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
     </div>
-
+    <hr>
 </div>
+
+

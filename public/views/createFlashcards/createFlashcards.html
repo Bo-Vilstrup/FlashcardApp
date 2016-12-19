@@ -1,10 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-
-</body>
-</html>
+<div class="container">
+    <h2>Create A New Flashcards</h2>
+    <Br/>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <form>
+                <div class="form-group">
+                    <label for="category">Category:</label>
+                    <input type="text" class="form-control" id="category" placeholder="Category" ng-model="category">
+                </div>
+                <div class="form-group">
+                    <label for="question">Question:</label>
+                    <input type="text" class="form-control" id="question" placeholder="Question" ng-model="question">
+                </div>
+                <div class="form-group">
+                    <label for="correctAnswer">Correct Answer:</label>
+                    <input type="text" class="form-control" id="correctAnswer" placeholder="Correct Answer" ng-model="correctAnswer">
+                </div>
+                <div class="form-group">
+                    <label for="WrongAnswer1">Wrong Answer 1:</label>
+                    <input type="text" class="form-control" id="WrongAnswer1" placeholder="Wrong Answer" ng-model="wrongAnswer1">
+                </div>
+                <div class="form-group">
+                    <label for="WrongAnswer2">Wrong Answer 1:</label>
+                    <input type="text" class="form-control" id="WrongAnswer2" placeholder="Wrong Answer" ng-model="wrongAnswer2">
+                </div>
+                <div class="form-group">
+                    <label for="WrongAnswer3">Wrong Answer 1:</label>
+                    <input type="text" class="form-control" id="WrongAnswer3" placeholder="Wrong Answer" ng-model="wrongAnswer3">
+                </div>
+                <button type="submit" class="btn btn-success" ng-click="submit()">Submit</button>
+            </form>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+    <hr>
+</div>

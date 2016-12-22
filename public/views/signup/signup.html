@@ -6,9 +6,28 @@
         <div class="col-md-10">
             <form class="form-horizontal">
                 <div class="form-group">
-                    <label class="col-sm-2 control-label">User Name:</label>
+                    <label class="col-sm-2 control-label">First Name:</label>
                     <div class="col-sm-10">
-                        <input type="text" ng-focus="Focus()" ng-model="userName" placeholder="User Name">
+                        <input type="text" ng-focus="Focus()" ng-model="firstName" placeholder="First Name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Last Name:</label>
+                    <div class="col-sm-10">
+                        <input type="text" ng-focus="Focus()" ng-model="lastName" placeholder="Last name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Email:</label>
+                    <div class="col-sm-10">
+                        <input type="email" ng-focus="Focus()" ng-model="email" placeholder="Email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">Usename:</label>
+                    <div class="col-sm-10">
+                        <input type="text" ng-focus="Focus()" ng-model="userName" placeholder="Username">
+                        <p>Username is a unique name of your choice (use letters and numbers)</p>
                         <span style="{{Style(isSaved)}}">{{feetbackError}}</span>
                     </div>
                 </div>
